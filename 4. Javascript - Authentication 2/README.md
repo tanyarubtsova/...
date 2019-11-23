@@ -2,6 +2,7 @@
 2) Видим кнопку login
 3) Нажимаем клавиши Ctrl+Shift+i, внизу страницы открываем файл login.js
 4)
+```
 var username = prompt("Username :", ""); //по сути строка username пустая
 var password = prompt("Password :", "");
 var TheLists = ["GOD:HIDDEN"]; // это список из 1 элемента-строки
@@ -12,4 +13,5 @@ var TheUsername = TheSplit[0]; // ="GOD"
 var ThePassword = TheSplit[1]; // ="HIDDEN"
 if (username == TheUsername && password == ThePassword)
 вводим соответствующие значения логина (GOD), затем пароля (HIDDEN)
+```
 5) WIN 
