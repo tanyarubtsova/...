@@ -11,7 +11,7 @@ if (TheLists[i].indexOf(username) == 0) { //поиск в строке ["GOD:HID
 var TheSplit = TheLists[i].split(":"); //разделили строку на две, записали из в массив
 var TheUsername = TheSplit[0]; // ="GOD"
 var ThePassword = TheSplit[1]; // ="HIDDEN"
-if (username == TheUsername && password == ThePassword)
-```
-Вводим соответствующие значения логина (GOD), затем пароля (HIDDEN)
-5) WIN 
+if (username == TheUsername && password == ThePassword) 
+``` 
+5) Вводим соответствующие значения логина (GOD), затем пароля (HIDDEN)
+6) WIN 
