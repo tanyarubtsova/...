@@ -12,6 +12,6 @@ var TheSplit = TheLists[i].split(":"); //разделили строку на д
 var TheUsername = TheSplit[0]; // ="GOD"
 var ThePassword = TheSplit[1]; // ="HIDDEN"
 if (username == TheUsername && password == ThePassword)
-вводим соответствующие значения логина (GOD), затем пароля (HIDDEN)
 ```
+Вводим соответствующие значения логина (GOD), затем пароля (HIDDEN)
 5) WIN 
